@@ -1,0 +1,81 @@
+.owl-controls {
+  & .owl-prev, .owl-next {
+    width: 33px;
+    height: 79px;
+    position: absolute;
+    top: 50%;
+    background: rgba(black, 0.7);
+    @include transform(translateY(-50%));
+    @include opacity(0.7);
+    @include transition(all 0.2s ease-in-out);
+    & .fa {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      font-size: 40px;
+    }
+    &:hover {
+      width: 43px;
+      @include opacity(1);
+      @include transition(all 0.2s ease-in-out);
+    }
+    &.disabled {
+      cursor: default;
+      @include opacity(0);
+      @include transition(opacity 0.2s ease-in-out);
+    }
+  }
+  & .owl-prev {
+    left: 0;
+    & .fa {
+      @include transform(translate(-70%,-50%));
+    }
+  }
+  & .owl-next {
+    right: 0;
+    & .fa {
+      @include transform(translate(-30%,-50%));
+    }
+  }
+  & .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    @include transform(translateX(-50%));
+    margin: 19px 0;
+    & .owl-dot {
+      width: 23px;
+      height: 23px;
+      background-color: #5e5e5e;
+      opacity: 0.4;
+      @include border-radius(50%);
+      display: inline-block;
+      padding: 6px;
+      background-clip: content-box;
+      @include opacity(0.7);
+      @include transition(all 0.2s ease-in-out);
+      &.active {
+        padding: 6px;
+        background: $mainColor;
+        background-clip: content-box;
+        @include transition(all 0.2s ease-in-out);
+      }
+      &:hover {
+        padding: 6px;
+        @include opacity(1);
+        @include transition(all 0.2s ease-in-out);
+      }
+    }
+  }
+}
+@media(max-width: 767px) {
+  .owl-controls {
+    & .owl-prev, .owl-next {
+      height: 43px;
+    }
+    & .owl-dots {
+      margin: 0;
+    }
+  }
+}

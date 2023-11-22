@@ -1,0 +1,15 @@
+.breadcrumbs.mod-breadcrumbs-6 {
+	width: 100%;
+  display: inline-block;
+  @import "../_common/scss/_crumbs_1.scss";
+  @import "../_common/scss/_category_image_1.scss";
+  margin-top: -30px;
+
+  .category-image {
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  @import "../_common/scss/_crumbs_rwd.scss";
+}

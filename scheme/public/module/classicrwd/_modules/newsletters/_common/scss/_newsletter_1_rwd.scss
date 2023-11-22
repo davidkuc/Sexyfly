@@ -1,0 +1,21 @@
+& .newsletter-container {
+  text-align: center;
+  .newsletter-content-wrapper {
+    display: block;
+    .newsletter-box-text {
+      .title {
+        font-size: 24px;
+      }
+      .newsletter-box-sub {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+    .newsletter-form {
+      .newsletter-button {
+        font-size: 14px;
+        padding: 6px 16px;
+      }
+    }
+  }
+}
