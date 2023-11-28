@@ -6,18 +6,16 @@
 	<div class="header_inner_wrapper">
 		<section class="header_middle_content">
 			<div class="sky-container">
-				<div class="header_middle_content_inner_wrapper">
-					<a href="/" class="header_middle_content_logo">
-						<img src="{$MODULE.children.common_shop_logo[0].props.preview}" alt="{IF $MODULE.children.logo_alt[0].props.value} {$MODULE.children.logo_alt[0].props.value} {ELSE} {$LOGO_ALT} {/IF}" />
-					</a>
-					<ul class="mobile-actions">
-						<li id="mobile-open-search">
-							<i class="fa fa-search"></i>
-						</li>
-						<li id="mobile-open-menu">
-							<i class="fa fa-bars"></i>
-						</li>
-					</ul>
+				<div class="header_middle_content_inner_wrapper">				
+						<div class="header_middle_content_menu_button">
+							<div>MENU</div>
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: #ED6082;"><path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path></svg>							
+							</div>
+						</div>
+						<div>
+							Sexyfly
+						</div>			
 					<div class="header_middle_content_searchbox search-box {IF $TURN_OFF_SALES}search-box-right{/IF}">
 						<form method="GET" action="/category/#top">
 							<div class="header_middle_content_searchbox_input_wrapper">
