@@ -17,9 +17,14 @@
       padding: $header-middle-content-padding-mid 0px;
 
       .header_middle_content_inner_wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: block;
+
+        .header_middle_content_inner_wrapper_block_1 {
+          display:flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+        }
 
         .header_middle_content_menu_button_container {
           display:flex;
