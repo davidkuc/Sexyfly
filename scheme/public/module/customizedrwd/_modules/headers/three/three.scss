@@ -18,13 +18,25 @@
 
       .header_middle_content_inner_wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+
+        .header_middle_content_menu_button_container {
+          display:flex;
+          font-size: 0.8rem;
+        }
 
         .header_middle_content_logo {
           font-family: playlistscript;
           font-size: 30px;
         }
+
+        .header_middle_content_menu_button_account_cart {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
         .header_middle_content_quick_cart_wrapper{
           margin-right: 25px;
         }
@@ -89,10 +101,6 @@
     .header_inner_wrapper {
       .header_middle_content {
         padding: 20px 0px;
-        .header_middle_content_inner_wrapper {
-          padding: 0px 5px;
-          justify-content: center;
-        }
       }
     }
     & .mobile-search {
@@ -102,9 +110,4 @@
       display: none;
     }
   }
-}
-
-.header_middle_content_menu_button_container {
-  display:flex;
-  font-size: 0.8rem;
 }
