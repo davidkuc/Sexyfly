@@ -12,9 +12,7 @@
       flex-basis: 100%;
       .input-field {
         margin: 0;
-        border-right: 0;
-        @include border-top-right-radius(0);
-        @include border-bottom-right-radius(0);
+        border-radius: 20px;
       }
     }
     .header_middle_content_searchbox_button_wrapper{
