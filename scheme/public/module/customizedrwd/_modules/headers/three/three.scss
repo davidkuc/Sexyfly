@@ -38,8 +38,9 @@
 
         .header_middle_content_menu_button_account_cart {
           display: flex;
-          justify-content: center;
+          justify-content: space-between;
           align-items: center;
+          width: 45px;
         }
 
         .header_middle_content_quick_cart_wrapper{
