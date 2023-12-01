@@ -96,6 +96,18 @@
   }
 }
 
+.swipe-panel {
+  & .swipe-panel-content.quick-cart {
+    & .dropdown {
+      @import "../_common/scss/_dropdown_quick_cart_1.scss";
+      min-width: 0 !important;
+      &.dropdown-quick-cart {
+        width: 300px;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   #header.mod-header-3 {
     .header_inner_wrapper {
@@ -110,4 +122,15 @@
       display: none;
     }
   }
+  
+  .swipe-panel {
+    & .swipe-panel-content.quick-cart {
+      & .dropdown {
+        @import "../_common/scss/_dropdown_quick_cart_1.scss";
+        min-width: 0 !important;
+      }
+    }
+  }
+
+  @import "../_common/scss/_mobile_menu_1.scss";
 }
